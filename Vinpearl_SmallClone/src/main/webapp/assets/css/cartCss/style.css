@@ -1,0 +1,199 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+*,
+:after,
+:before {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+button,
+input {
+    overflow: visible;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    color: inherit;
+}
+
+body {
+    position: relative;
+    font-family: 'Be Vietnam', sans-serif;
+}
+
+.text-accent {
+    color: #f39f2d;
+}
+
+.bg-accent {
+    background-color: #e8a84e;
+}
+
+#submitBtn {
+    margin-top: 36px;
+    margin-bottom: 34px;
+    border-top: 2px dashed #eaeaea;
+}
+
+#submitBtn button {
+    margin-top: -42px;
+    background: rgb(247, 100, 74);
+    background: linear-gradient(135deg, rgba(247, 100, 74, 1) 0%, rgba(231, 56, 39, 1) 100%);
+    color: #fff;
+    transition: all .4s;
+}
+
+#submitBtn button:hover {
+    background: white !important;
+    color: #ea3f2d;
+    border: 2px solid #ea3f2d;
+}
+
+label {
+    cursor: pointer;
+}
+
+/* Footer */
+.item {
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.Footer_Images:hover :not(:hover) {
+    opacity: 0.8;
+    transform: scale(0.9);
+}
+
+.bg-midskyblue,
+footer {
+    background-color: #151b40;
+}
+
+/* Navbar */
+.navbar-brand {
+    font-family: 'Dancing Script', handwriting;
+}
+
+div>.navbar-brand>b {
+    text-shadow: tan 1px 1px 4px;
+    position: relative;
+    top: 5px;
+    left: 0;
+}
+
+
+/* Back to top */
+@keyframes smoothscroll1 {
+
+    from,
+    to {
+        scroll-behavior: smooth;
+    }
+}
+
+@keyframes smoothscroll2 {
+
+    from,
+    to {
+        scroll-behavior: smooth;
+    }
+}
+
+html {
+    animation: smoothscroll1 1s;
+}
+
+html:focus-within {
+    animation-name: smoothscroll2;
+    scroll-behavior: smooth;
+}
+
+.back-to-top-link {
+    position: -webkit-sticky;
+    position: sticky;
+    position: fixed;
+    bottom: 10px;
+    pointer-events: all;
+    text-decoration: none;
+    font-size: 1rem;
+    text-align: center;
+    padding: 0.25rem;
+    display: none;
+    z-index: 99;
+    display: inline-block;
+    background-color: transparent;
+    width: 46px;
+    height: 45px;
+    border-radius: 50%;
+    border: 2px solid #f39f2d;
+    transition: border-color .3s, opacity .5s, visibility .5s;
+}
+
+.back-to-top-wrapper {
+    position: absolute;
+    right: 0.25rem;
+    bottom: 0em;
+    width: 3.5em;
+    pointer-events: none;
+}
+
+
+/* Tìm kiếm */
+.ant-input-affix-wrapper {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: rgba(0, 0, 0, .65);
+    font-size: 14px;
+    font-variant: tabular-nums;
+    line-height: 1.5;
+    list-style: none;
+    -webkit-font-feature-settings: "tnum";
+    font-feature-settings: "tnum", "tnum";
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    text-align: start;
+}
+
+.ant-input:focus {
+    box-shadow: 4px 4px #e8a84e;
+    color: #e8a84e;
+}
+
+.ant-input-affix-wrapper svg:hover {
+    fill: #e8a84e;
+    cursor: pointer;
+}
+
+/* Đăng ký / Đăng nhập */
+.ins-dynamic-banner-wrapper-c306 .ins-image {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.ins-dynamic-banner-wrapper-c306 .ins-price {
+    text-align: center !important;
+    font-size: 18px !important;
+    color: rgb(0, 0, 0) !important;
+    font-family: 'Dancing Script', sans-serif !important;
+    font-weight: bold;
+    position: absolute;
+    transform: translate(-50%, -45%);
+    bottom: 10.5%;
+    left: 50%;
+}

@@ -1,0 +1,48 @@
+body,
+header,.body {
+    font-family: 'Be Vietnam', sans-serif;
+}
+
+/* Navbar */
+.navbar-brand {
+    font-family: 'Dancing Script', handwriting;
+}
+
+div>.navbar-brand>b {
+    text-shadow: tan 1px 1px 4px;
+    position: relative;
+    top: 5px;
+    left: 0;
+}
+
+/* Back to top */
+html {
+    scroll-behavior: smooth;
+}
+
+/* form validation */
+.form-label::before {
+    display: inline-block;
+    margin-right: 4px;
+    color: #f5222d;
+    font-size: 14px;
+    font-family: SimSun, sans-serif;
+    line-height: 1;
+    content: "*";
+}
+
+#submitBtn button {
+    width: 60% !important;
+    background: rgb(247, 100, 74);
+    background: linear-gradient(135deg, rgba(247, 100, 74, 1) 0%, rgba(231, 56, 39, 1) 100%);
+    color: #fff;
+    transition: all .4s;
+}
+
+#submitBtn button:hover {
+    background: white !important;
+    color: #ea3f2d;
+    border: 2px solid #ea3f2d;
+}
+
+

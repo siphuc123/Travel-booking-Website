@@ -1,0 +1,155 @@
+@import url(https://fonts.googleapis.com/css2?family=Be+Vietnam:wght@100;200;300;400;500;600;800&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Dancing+Script:wght@100;200;300;400;500;600;700&display=swap);
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+*,
+:after,
+:before {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+button,
+input {
+    overflow: visible;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    color: inherit;
+}
+
+body {
+    position: relative;
+    font-family: 'Be Vietnam', sans-serif;
+}
+
+#pageContent {
+    background: url(https://storage.googleapis.com/vin3sprodauth0.vin3s.vn/vinpearl_login_screen.jpg) no-repeat scroll 50% transparent;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+}
+
+form>div>input {
+    height: 50px;
+    outline: none;
+    padding-left: 12px;
+}
+
+.text-accent {
+    color: #ea3f2d
+}
+
+.bg-accent {
+    background-color: #ea402daf
+}
+
+#submitBtn {
+    margin-top: 37px;
+    margin-bottom: 34px;
+    border-top: 2px dashed #eaeaea;
+}
+
+#submitBtn button {
+    margin-top: -42px;
+    background: rgb(247, 100, 74);
+    background: linear-gradient(135deg, rgba(247, 100, 74, 1) 0%, rgba(231, 56, 39, 1) 100%);
+    color: #fff;
+    transition: all .4s;
+}
+
+#submitBtn button:hover {
+    background: white !important;
+    color: #ea3f2d;
+    border: 2px solid #ea3f2d;
+}
+
+.maxWidth360 {
+    max-width: 360px;
+    margin: 0 auto;
+}
+
+/* Remember me */
+#vpt-main-login .row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 3em;
+}
+
+.form-check {
+    position: relative;
+    display: block;
+    padding-left: 0.75em;
+}
+
+label {
+    cursor: pointer;
+}
+
+.form-check-input {
+    margin-top: 0.37rem;
+}
+
+/* Navbar */
+.navbar-brand {
+    font-family: 'Dancing Script', handwriting;
+}
+
+div>.navbar-brand>b {
+    text-shadow: tan 1px 1px 4px;
+    position: relative;
+    top: 5px;
+    left: 0;
+}
+
+/* Upload file */
+.btn-file {
+	position: relative;
+	overflow: hidden;
+}
+
+.btn-file input[type=file] {
+	position: absolute;
+	top: 0;
+	right: 0;
+	min-width: 100%;
+	min-height: 100%;
+	font-size: 100px;
+	text-align: right;
+	filter: alpha(opacity = 0);
+	opacity: 0;
+	background: red;
+	cursor: inherit;
+	display: block;
+}
+
+.file-input-label {
+	padding: 0px 10px;
+	display: table-cell;
+	vertical-align: middle;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+}
+
+input[readonly] {
+	background-color: white !important;
+	cursor: text !important;
+}

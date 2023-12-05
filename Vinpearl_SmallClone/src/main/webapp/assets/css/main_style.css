@@ -1,0 +1,250 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css2?family=Be+Vietnam:wght@100;200;300;400;500;600;800&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Dancing+Script:wght@100;200;300;400;500;600;700&display=swap);
+
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+*,
+:after,
+:before {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  font-family: 'Be Vietnam', sans-serif;
+}
+
+button,
+input {
+  overflow: visible;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  color: inherit;
+}
+
+/* Màu chủ đạo */
+.text-accent {
+  color: #f39f2d;
+}
+
+.bg-accent {
+  background-color: #e8a84e;
+}
+
+/* Back to top */
+@keyframes smoothscroll1 {
+
+  from,
+  to {
+    scroll-behavior: smooth;
+  }
+}
+
+@keyframes smoothscroll2 {
+
+  from,
+  to {
+    scroll-behavior: smooth;
+  }
+}
+
+html {
+  animation: smoothscroll1 1s;
+}
+
+html:focus-within {
+  animation-name: smoothscroll2;
+  scroll-behavior: smooth;
+}
+
+.back-to-top-link {
+  position: -webkit-sticky;
+  position: sticky;
+  position: fixed;
+  bottom: 10px;
+  pointer-events: all;
+  text-decoration: none;
+  font-size: 1rem;
+  text-align: center;
+  padding: 0.25rem;
+  display: none;
+  z-index: 99;
+  display: inline-block;
+  background-color: transparent;
+  width: 46px;
+  height: 45px;
+  border-radius: 50%;
+  border: 2px solid #f39f2d;
+  transition: border-color .3s, opacity .5s, visibility .5s;
+}
+
+.back-to-top-wrapper {
+  position: absolute;
+  right: 0.25rem;
+  bottom: 0em;
+  width: 3.5em;
+  pointer-events: none;
+}
+
+/* Còn tiếp */
+.continue {
+  color: #FFFFFF;
+  background: tan;
+  text-shadow: #474747 4px 6px 2px;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+/* Footer */
+.item {
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.Footer_Images:hover :not(:hover) {
+  opacity: 0.8;
+  transform: scale(0.9);
+}
+
+.bg-midskyblue,
+footer {
+  background-color: #151b40;
+}
+
+/* Chữ kế bên logo */
+a:link {
+  text-decoration: none !important;
+  ;
+}
+
+.titlePage {
+  font-family: 'Dancing Script', handwriting;
+  text-shadow: tan 1px 1px 4px;
+  position: relative;
+  top: 5px;
+  left: 2px;
+  padding-left: 2px;
+  text-decoration: wavy !important;
+  font-size: 20px;
+  color: black;
+}
+
+/* navbar */
+nav {
+  padding: 12px !important;
+}
+
+Block {
+	display: block !important;
+}
+
+/* Footer */
+.item {
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.Footer_Images:hover :not(:hover) {
+  opacity: 0.8;
+  transform: scale(0.9);
+}
+
+.bg-midskyblue,
+footer {
+  background-color: #151b40;
+}
+
+/* Preloader_ */
+#preloader {
+  overflow: hidden;
+  background-color: #2a2a2a;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: fixed;
+  z-index: 99999;
+  color: #fff;
+}
+
+#preloader .jumper {
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  display: block;
+  position: absolute;
+  margin: auto;
+  width: 50px;
+  height: 50px;
+}
+
+#preloader .jumper > div {
+  background-color: #fff;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  position: absolute;
+  opacity: 0;
+  width: 50px;
+  height: 50px;
+  -webkit-animation: jumper 1s 0s linear infinite;
+  animation: jumper 1s 0s linear infinite;
+}
+
+#preloader .jumper > div:nth-child(2) {
+  -webkit-animation-delay: 0.33333s;
+  animation-delay: 0.33333s;
+}
+
+#preloader .jumper > div:nth-child(3) {
+  -webkit-animation-delay: 0.66666s;
+  animation-delay: 0.66666s;
+}
+
+@-webkit-keyframes jumper {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  5% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+
+@keyframes jumper {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  5% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
